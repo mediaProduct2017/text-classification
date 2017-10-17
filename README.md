@@ -8,7 +8,7 @@
 * twitter data（积极或消极）
 
 2. topic analysis
-* reddit api data, 类别由用户自己选择，可能有标注错误，不是标准数据集，不适合在初步建模中使用w
+* reddit api data, 类别由用户自己选择，可能有标注错误，不是标准数据集，不适合在初步建模中使用
 
 3. 文本（或标题）与用户评价、用户阅读量的联系
 * game title, provided by Siraj Raval in youtube lectures
