@@ -4,8 +4,8 @@
 
 文本分类的pilot research，数据有以下几个类型：
 1. sentiment analysis
-* 电影评论数据，标准数据集
-* twitter data
+* 电影评论数据（正面或负面评价），标准数据集
+* twitter data（积极或消极）
 
 2. topic analysis
 * reddit api data, 类别由用户自己选择，可能有标注错误，不是标准数据集，不适合在初步建模中使用w
@@ -24,3 +24,11 @@
 另外，看到的2015年的一篇论文报道了一种基于EMD和类似KNN思想的一种算法，我也进行了尝试。
 
 未来，还需要尝试的深度学习算法包括facebook的FastText（基于CNN）、TextCNN（CNN用于文本分类的开山模型）、CNN+RNN、RCNN、Bi-GRU（RNN的一种）等方法。最终确定适合具体的分类问题的算法。
+
+## 产品
+
+* 电影评论的情感分析产品（需要选择最为合适的算法）
+
+* 科技类资讯分类产品
+
+* 资讯阅读量预测产品
