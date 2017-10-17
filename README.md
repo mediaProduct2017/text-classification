@@ -12,3 +12,5 @@
 * reddit api data, 类别由用户自己选择，可能有标注错误，不是标准数据集，不适合在初步建模中使用
 
 文本分类产品的test效果展示，可以在github上下载项目，修改数据文件，运行python程序，就能看到分类的结果。
+
+## How to frame problems in text classification
