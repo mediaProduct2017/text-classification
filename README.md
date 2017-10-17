@@ -8,9 +8,19 @@
 * twitter data
 
 2. topic analysis
+* reddit api data, 类别由用户自己选择，可能有标注错误，不是标准数据集，不适合在初步建模中使用w
+
+3. 文本（或标题）与用户评价、用户阅读量的联系
 * game title, provided by Siraj Raval in youtube lectures
-* reddit api data, 类别由用户自己选择，可能有标注错误，不是标准数据集，不适合在初步建模中使用
 
 文本分类产品的test效果展示，可以在github上下载项目，修改数据文件，运行python程序，就能看到分类的结果。
 
 ## How to frame problems in text classification
+
+## 算法的选择
+
+深度学习之前的常用算法是naive bayesian（朴素贝叶斯）和SVM（支持向量机），近年来，随着深度学习技术的进步，众多文献显示深度学习有着更好的效果。RNN with LSTMs和CNN是最基本的深度学习算法，所以首先尝试这两个算法。
+
+另外，看到的2015年的一篇论文报道了一种基于EMD和类似KNN思想的一种算法，我也进行了尝试。
+
+未来，还需要尝试的深度学习算法包括facebook的FastText（基于CNN）、TextCNN（CNN用于文本分类的开山模型）、CNN+RNN、RCNN、Bi-GRU（RNN的一种）等方法。最终确定适合具体的分类问题的算法。
