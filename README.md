@@ -23,6 +23,8 @@
 
 另外，看到的2015年的一篇论文报道了一种基于EMD和类似KNN思想的一种算法，我也进行了尝试。
 
+最后还是决定用deep learning来做。deep learning相对EMD有三大优势：第一，准确率更高；第二，虽然EMD速度更快，但主要是胜在不需要训练，deep learning的模型训练好以后，在test阶段，二者是差不多的，甚至test阶段deep learning的模型还要更快一些；第三，当前deep learning的技术发展很多，全世界很多研发人员精力都放在deep learning上，如果未来这个方向继续有技术突破，我们能很快用在我们的产品上。
+
 未来，还需要尝试的深度学习算法包括facebook的FastText（基于CNN）、TextCNN（CNN用于文本分类的开山模型）、CNN+RNN、RCNN、Bi-GRU（RNN的一种）等方法。最终确定适合具体的分类问题的算法。
 
 ## 产品
