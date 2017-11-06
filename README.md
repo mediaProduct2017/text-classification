@@ -7,6 +7,10 @@
 文本分类的pilot research，数据有以下几个类型：
 1. sentiment analysis
 * 电影评论数据（正面或负面评价），标准数据集
+naturally labeled data; automatically labeled data, mannually labeled data, unlabeled data
+
+得到的模型可以用于transfer learning, 监测电影口碑的舆情
+
 * twitter data（积极或消极）
 
 2. topic analysis
