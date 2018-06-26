@@ -6,6 +6,9 @@
 
 文本分类的pilot research，数据有以下几个类型：
 1. sentiment analysis
+
+[learn-SentimentAnalysis](https://github.com/mediaProduct2017?tab=repositories)
+
 * 电影评论数据（正面或负面评价），标准数据集
 naturally labeled data; automatically labeled data, mannually labeled data, unlabeled data
 
@@ -14,9 +17,17 @@ naturally labeled data; automatically labeled data, mannually labeled data, unla
 * twitter data（积极或消极）
 
 2. topic analysis
+
+[topic-classifier](https://github.com/mediaProduct2017/topic-classifier)
+
+[Text Classification with CNN and RNN](https://github.com/arfu2016/text-classification-cnn-rnn)
+
 * reddit api data, 类别由用户自己选择，可能有标注错误，不是标准数据集，不适合在初步建模中使用
 
 3. 文本（或标题）与用户评价、用户阅读量的联系
+
+[text-reco](https://github.com/mediaProduct2017/text-reco)
+
 * game title, provided by Siraj Raval in youtube lectures，标题与用户评价的联系
 
 文本分类产品的test效果展示，可以在github上下载项目，修改数据文件，运行python程序，就能看到分类的结果。
