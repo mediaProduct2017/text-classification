@@ -20,6 +20,8 @@ naturally labeled data; automatically labeled data, mannually labeled data, unla
 
 [topic-classifier](https://github.com/mediaProduct2017/topic-classifier)
 
+[lstm-classification](https://github.com/arfu2016/nlp/tree/master/nlp_models/lstm-classification)
+
 [Text Classification with CNN and RNN](https://github.com/arfu2016/text-classification-cnn-rnn)
 
 * reddit api data, 类别由用户自己选择，可能有标注错误，不是标准数据集，不适合在初步建模中使用
