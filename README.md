@@ -34,6 +34,33 @@ naturally labeled data; automatically labeled data, mannually labeled data, unla
 
 文本分类产品的test效果展示，可以在github上下载项目，修改数据文件，运行python程序，就能看到分类的结果。
 
+4. fasttext
+
+[FastText using pre-trained word vector for text classification](https://stackoverflow.com/questions/47692906/fasttext-using-pre-trained-word-vector-for-text-classification)
+
+FastText's native classification mode depends on you training the word-vectors yourself, using texts with known classes. The word-vectors thus become optimized to be useful for the specific classifications observed during training. So that mode typically wouldn't be used with pre-trained vectors.
+
+If using pre-trained word-vectors, you'd then somehow compose those into a text-vector yourself (for example, by averaging all the words of a text together), then training a separate classifier (such as one of the many options from scikit-learn) using those features.
+
+FastText supervised training has -pretrainedVectors argument which can be used like this:
+
+    $ ./fasttext supervised -input train.txt -output model -epoch 25 \
+           -wordNgrams 2 -dim 300 -loss hs -thread 7 -minCount 1 \
+           -lr 1.0 -verbose 2 -pretrainedVectors wiki.ru.vec
+           
+Few things to consider:
+
+Chosen dimension of embeddings must fit the one used in pretrained vectors. E.g. for Wiki word vectors is must be 300. It is set by -dim 300 argument.
+
+As of mid-February 2018, Python API (v0.8.22) doesn't support training using pretrained vectors (the corresponding parameter is ignored). So you must use CLI (command line interface) version for training. However, a model trained by CLI with pretrained vectors can be loaded by Python API and used for predictions.
+
+For large number of classes (in my case there were 340 of them) even CLI may break with an exception so you will need to use hierarchical softmax loss function (-loss hs)
+
+Hierarchical softmax is worse in performance than normal softmax so it can give up all the gain you've got from pretrained embeddings.
+
+The model trained with pretrained vectors can be several times larger than one trained without.
+In my observation, the model trained with pretrained vectors gets overfitted faster than one trained without           
+
 ## How to frame problems in text classification
 
 ## 算法的选择
